@@ -7,17 +7,16 @@ init(autoreset=True) # Inicializa colorama
 
 while True:
     #encabezado
-    print(Style.BRIGHT + Fore.CYAN + "=====================================")
-    print("Taller 1 - Algoritmos basicos en python")
-    print("by joshan ire pereira cabrera")
-    print("Menu Principal")
-    print("=====================================")
-
+    print(Style.BRIGHT + Fore.CYAN + Back.BLACK + "=====================================")
+    print(Style.BRIGHT + Fore.CYAN +"Taller 1 - Algoritmos basicos en python")
+    print(Style.BRIGHT + Fore.CYAN +"by joshan ire pereira cabrera")
+    print(Style.BRIGHT + Fore.CYAN +"Menu Principal")
+    print(Style.BRIGHT + Fore.CYAN + Back.BLACK + "=====================================")
     for i in range(1, 26):
         print(f"{i}. Ejecutar algoritmo {i}")
     print("0. Salir \n")
 
-    opcion = input("Seleciona una opción: ")
+    opcion = input(Style.BRIGHT + Fore.CYAN + "Seleciona una opción: ")
 
     if opcion == "0":
         print("Saliendo...")
@@ -35,4 +34,4 @@ while True:
 
 
     # 
-    input("\n Presiona ENTER para continuar....")
+    input(Style.BRIGHT + Fore.CYAN +"\n Presiona ENTER para continuar....")
