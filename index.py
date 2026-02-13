@@ -1,10 +1,13 @@
 import os # Interactua con el sistema operativo (archivos, directorios, rutas, variables de entorno)
 import sys # maneja la configuracion y el entorno del interprete de python (argumentos de lineas de comandos, rutas de modulos)
-import subprocess # ejecuta comandos externos y programas, controlando sus entrandas y salidas y errores 
+import subprocess # ejecuta comandos externos y programas, controlando sus entrandas y salidas y errores
+from colorama import init, Fore, Style, Back # colorama es una biblioteca que permite imprimir texto con colores y estilos en la terminal
+
+init(autoreset=True) # Inicializa colorama
 
 while True:
     #encabezado
-    print("=====================================")
+    print(Style.BRIGHT + Fore.CYAN + "=====================================")
     print("Taller 1 - Algoritmos basicos en python")
     print("by joshan ire pereira cabrera")
     print("Menu Principal")
